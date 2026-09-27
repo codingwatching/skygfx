@@ -471,6 +471,7 @@ namespace skygfx
 		inline const BlendMode AlphaBlend = BlendMode(Blend::One, Blend::InvSrcAlpha);
 		inline const BlendMode Additive = BlendMode(Blend::SrcAlpha, Blend::One);
 		inline const BlendMode NonPremultiplied = BlendMode(Blend::SrcAlpha, Blend::InvSrcAlpha);
+		inline const BlendMode NonPremultipliedAlphaAccumulate = BlendMode(Blend::SrcAlpha, Blend::InvSrcAlpha, Blend::One, Blend::InvSrcAlpha);
 	}
 
 	enum class ComparisonFunc
